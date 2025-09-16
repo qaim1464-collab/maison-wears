@@ -1,66 +1,66 @@
-# maison-wears
-export default function MaisonWearsShowcase() {
-  return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans">
-      {/* Navbar */}
-      <header className="flex justify-between items-center px-8 py-4 sticky top-0 bg-white z-50 border-b">
-        <h1 className="text-3xl font-bold tracking-widest uppercase">Maison Wears</h1>
-        <nav className="space-x-6 text-sm font-medium">
-          <a href="#lookbook" className="hover:text-gray-600">Lookbook</a>
-          <a href="#about" className="hover:text-gray-600">Story</a>
-          <a href="#contact" className="hover:text-gray-600">Contact</a>
-        </nav>
-      </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison Wears</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
 
-      {/* Hero Section */}
-      <section className="h-[85vh] flex flex-col justify-center items-center text-center bg-cover bg-center" style={{backgroundImage: "url('https://via.placeholder.com/1600x900')"}}>
-        <div className="bg-black/40 w-full h-full flex flex-col justify-center items-center">
-          <h2 className="text-6xl font-extrabold text-white mb-4 tracking-wider">Maison Wears</h2>
-          <p className="text-lg text-gray-200 mb-6 uppercase tracking-widest">Elegance • Minimalism • Identity</p>
-          <a href="#lookbook" className="px-8 py-3 bg-white text-black rounded-full shadow-md hover:bg-gray-100 transition uppercase tracking-wide">Explore Lookbook</a>
-        </div>
-      </section>
-
-      {/* Lookbook Section */}
-      <section id="lookbook" className="py-20 px-8 bg-white">
-        <h3 className="text-4xl font-bold mb-12 text-center uppercase tracking-widest">Lookbook</h3>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
-            <img src="https://via.placeholder.com/500x600" alt="Look 1" className="w-full h-[500px] object-cover" />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
-            <img src="https://via.placeholder.com/500x600" alt="Look 2" className="w-full h-[500px] object-cover" />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
-            <img src="https://via.placeholder.com/500x600" alt="Look 3" className="w-full h-[500px] object-cover" />
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="py-20 px-8 bg-gray-50 text-center">
-        <h3 className="text-4xl font-bold mb-8 uppercase tracking-widest">Our Story</h3>
-        <p className="max-w-3xl mx-auto text-gray-700 text-lg leading-relaxed">
-          Maison Wears is more than clothing – it is a lifestyle. Born from a passion for minimalism and refined elegance, every piece is crafted to embody timeless design and effortless confidence. We believe fashion should tell your story, not just follow trends.
-        </p>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-8 bg-white text-center">
-        <h3 className="text-4xl font-bold mb-8 uppercase tracking-widest">Contact</h3>
-        <p className="text-gray-600 mb-6">For collaborations, press, or inquiries — let’s connect.</p>
-        <a href="mailto:info@maisonwears.com" className="px-8 py-3 bg-black text-white rounded-full shadow-md hover:bg-gray-800 transition uppercase tracking-wide">Email Us</a>
-        <div className="flex justify-center space-x-8 mt-8 text-sm font-medium uppercase tracking-wide">
-          <a href="#" className="hover:text-gray-600">Instagram</a>
-          <a href="#" className="hover:text-gray-600">Facebook</a>
-          <a href="#" className="hover:text-gray-600">Twitter</a>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="py-6 text-center text-gray-500 text-sm border-t uppercase tracking-wide">
-        © {new Date().getFullYear()} Maison Wears — All Rights Reserved
-      </footer>
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 bg-black/60">
+    <h1 class="text-2xl font-bold">Maison Wears</h1>
+    <div class="space-x-6">
+      <a href="#lookbook" class="hover:underline">Lookbook</a>
+      <a href="#story" class="hover:underline">Story</a>
+      <a href="#contact" class="hover:underline">Contact</a>
     </div>
-  );
-}
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-[85vh] flex flex-col items-center justify-center bg-black/40">
+    <div class="text-center">
+      <h2 class="text-6xl font-extrabold">Maison Wears</h2>
+      <p class="text-lg text-gray-200 mt-4">Maison Wears is more than clothing...</p>
+      <a href="#lookbook" class="px-8 py-3 mt-6 inline-block bg-white text-black rounded-lg font-bold">Explore</a>
+    </div>
+  </section>
+
+  <!-- Lookbook Section -->
+  <section id="lookbook" class="py-20 px-6">
+    <h3 class="text-4xl font-bold mb-10 text-center">Lookbook</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="rounded-2xl overflow-hidden">
+        <img src="https://via.placeholder.com/300" alt="Look 1" />
+      </div>
+      <div class="rounded-2xl overflow-hidden">
+        <img src="https://via.placeholder.com/300" alt="Look 2" />
+      </div>
+      <div class="rounded-2xl overflow-hidden">
+        <img src="https://via.placeholder.com/300" alt="Look 3" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 text-center">
+    <h3 class="text-4xl font-bold mb-6">About Us</h3>
+    <p class="max-w-3xl mx-auto">
+      Maison Wears is more than clothing. We combine comfort, style, and elegance to bring you timeless fashion pieces.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 text-center bg-black/50">
+    <h3 class="text-4xl font-bold mb-6">Contact Us</h3>
+    <p>Email: maisonwears@example.com</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-black/70">
+    <p>&copy; 2025 Maison Wears. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
